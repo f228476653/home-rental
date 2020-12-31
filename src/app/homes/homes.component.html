@@ -1,0 +1,22 @@
+<div class="uk-padding uk-container">
+    <div class="uk-grid-medium" uk-grid>
+        <div *ngFor = "let home of homes$ | async"> 
+            
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card ">
+                        <div class="uk-card-media-top">
+                            <img src="{{home.image_url}}">
+                        </div>
+                        <div class="uk-card-body uk-padding-remove">
+                            <div class="uk-text-bold"> {{ home.title }}</div>
+                            <div class="uk-text-muted uk-text-uppercase uk-text-small
+                            uk-text-bold uk-text-truncare">
+                                {{ home.type }} / {{ home.location }}
+                            </div>
+                        </div>  
+                    </div>
+                </div> 
+            </div>
+        </div>
+    
+</div>
